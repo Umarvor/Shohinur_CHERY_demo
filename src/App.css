@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.Container{
+  max-width: 1540px;
+  margin: auto;
+  flex-shrink: 0;
+height: auto;
+}

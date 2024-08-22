@@ -1,0 +1,135 @@
+.Slayder3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    /* Kichik ekranlar uchun padding qo'shildi */
+    box-sizing: border-box;
+    /* Ekran hajmidan tashqari padding va borderlarni chiqarib tashlaydi */
+}
+
+.car-slider-containerr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.car-modelss {
+    display: flex;
+    margin-bottom: 20px;
+   
+    /* Kichik ekranlarda tugmalarni ustma-ust qilish */
+    justify-content: center;
+    /* Kichik ekranlarda tugmalarni markazlashtirish */
+    z-index: 999;
+    position: absolute;
+
+
+}
+
+.model-buttonn {
+    margin: 5px 10px;
+    /* Marginlarni kamaytirildi kichik ekranlar uchun */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+    border: none;
+    transition: color 0.5s;
+
+    &:hover {
+        border-bottom: 2px solid black;
+        color: black;
+    }
+}
+
+
+.car-displayy {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    /* Keng ekranlar uchun maksimal kenglik */
+    aspect-ratio: 16/9;
+    /* Rasmning proporsiyasini saqlash uchun */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.car-imagee {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.malumot {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Kichik ekranlarda elementlarni ustma-ust qilish */
+}
+
+.btnn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 230px;
+
+
+
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+.btn2{
+    display: flex;
+    justify-content: center;
+}
+.btnn:hover {
+    background-color: #e60000;
+    color: white;
+}
+
+/* Responsiv dizayn uchun maxsus media queries */
+@media (max-width: 768px) {
+    .car-displayy {
+        height: auto;
+        /* Kichik ekranlar uchun balandlikni avtomatik qilish */
+    }
+}
+
+.car-infoo {
+    /* Ma'lumotlar uchun yangi stil */
+    position: absolute;
+    bottom: 20px;
+  
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Shaffof qora fon */
+    padding: 20px;
+    border-radius: 10px;
+    
+    width: 92%;
+    /* Kenglikni cheklash uchun */
+}
+
+.car-infoo h3 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+}
+
+
+.malumot {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

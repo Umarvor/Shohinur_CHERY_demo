@@ -1,0 +1,45 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+  }
+  
+  .logo img {
+    height: 40px; 
+    cursor: pointer;
+  }
+  
+  .menu, .call-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-item {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+   list-style: none;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .menu-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: -4px; 
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+  }
+  
+  .menu-item:hover::after {
+    width: 100%; /* Yozuvning yarimidan to'liq uzunlikka kengaytirish */
+  }
+  

@@ -1,0 +1,142 @@
+.news-section {
+   
+    padding: 20px;
+  }
+  
+  .news-item {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .news-date {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .news-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .news-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .news-button {
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    cursor: pointer;
+   
+   transition: all 0.3s;
+    align-items: center;
+    &:hover{
+        background-color: red;
+        color: white;
+    }
+  }
+  
+  .news-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .news-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .additional-news {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .additional-news-item {
+    flex: 1;
+  }
+  
+  .additional-news-item + .additional-news-item {
+    margin-left: 20px;
+  }
+  
+  .additional-news-item .news-date {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .additional-news-item .news-title {
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+  }
+  @media (max-width: 1024px) {
+    .news-section {
+      flex-direction: column;
+    }
+  
+    .news-item {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .additional-news {
+      flex-direction: column;
+    }
+  
+    .additional-news-item + .additional-news-item {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .news-title {
+      font-size: 20px;
+    }
+  
+    .news-description {
+      font-size: 14px;
+    }
+  
+    .news-button {
+      padding: 8px 16px;
+    }
+  
+    .additional-news-item .news-title {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .news-section {
+      padding: 10px;
+    }
+  
+    .news-title {
+      font-size: 18px;
+    }
+  
+    .news-description {
+      font-size: 12px;
+    }
+  
+    .news-button {
+      padding: 6px 12px;
+    }
+  
+    .additional-news {
+      margin-top: 20px;
+    }
+  
+    .additional-news-item .news-title {
+      font-size: 12px;
+    }
+  }

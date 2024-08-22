@@ -1,0 +1,138 @@
+.d {
+    width: 100%;
+    height: 700px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* Adding position relative for the slide */
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+
+.Slide1,
+.Slide2,
+.Slide3,
+.Slide4,
+.Slide5,
+.Slide6 {
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* Adding position relative to allow absolute positioning of the text */
+}
+
+.Slide1 {
+    background-image: url(../img/ba156b0288b6.webp);
+}
+
+.Slide2 {
+    background-image: url(../img/s2.webp);
+}
+
+.Slide3 {
+    background-image: url(../img/s3.webp);
+}
+
+.Slide4 {
+    background-image: url(../img/s4.webp);
+}
+
+.Slide5 {
+    background-image: url(../img/s5.webp);
+}
+
+.Slide6 {
+    background-image: url(../img//s6.webp);
+}
+
+.art1 {
+    position: absolute;
+    top: 35%;
+    /* Center vertically */
+    left: 33.7%;
+    /* Center horizontally */
+    transform: translate(-50%, -30%);
+    /* Adjust for exact centering */
+
+    color: white;
+    padding: 20px;
+    font-size: 36px;
+    /* Adjust font size as needed */
+    z-index: 10;
+    /* Ensure the text is above the slide background */
+}
+
+.btn1 {
+    position: absolute;
+    top: 55%;
+    /* Center vertically */
+    left: 13%;
+    /* Center horizontally */
+    transform: translate(-50%, -30%);
+    /* Adjust for exact centering */
+    cursor: pointer;
+    background-color: rgba(0, 255, 255, 0);
+    padding: 20px;
+transition: all 0.3s;
+    z-index: 10;
+    color: white;
+    border: 2px solid white;
+
+    /* Ensure the text is above the slide background */
+    &:hover {
+        background-color: red;
+    }
+}
