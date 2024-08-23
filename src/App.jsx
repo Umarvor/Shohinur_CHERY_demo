@@ -15,8 +15,12 @@ function App() {
       <div className='Container'>
         <Navbar />
         <Slayder1 />
+        <div className='Container2'>
+        
         <Slayder2 />
         <Rasm1 />
+        
+        </div>
         <Slayder3/>
         <Page4/>
         <Vidio/>

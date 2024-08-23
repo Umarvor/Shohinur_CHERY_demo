@@ -84,8 +84,8 @@
   .bt223{
     padding: 15px;
     cursor: pointer;
-    border: 2px solid black;
-    transition: all 0.3s;
+  
+    transition: all 0.5s;
     &:hover{
       background-color: red;
       color: white;

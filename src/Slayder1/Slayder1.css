@@ -197,6 +197,7 @@
     /* Ensure the text is above the slide background */
     &:hover {
         background-color: red;
+        border: 0;
     }
 }
 .btn2 {
@@ -218,6 +219,7 @@
     /* Ensure the text is above the slide background */
     &:hover {
         background-color: red;
+        border: 0;
     }
 }
 .btn3 {
@@ -239,5 +241,6 @@
     /* Ensure the text is above the slide background */
     &:hover {
         background-color: red;
+        border: 0;
     }
 }

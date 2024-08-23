@@ -15,7 +15,8 @@ const Navbar = () => {
       </div>
       <div className="call-section">
         <a href="#" className="menu-item">Qo'ng'iroq buyurtma qilish</a>
-        <a href="#" className="menu-item">PU UZ</a>
+        <a href="#" className="menu-item">RU</a>
+        <a href="#" className="menu-item">UZ</a>
       </div>
     </div>
   );

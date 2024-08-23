@@ -37,17 +37,29 @@
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    color: #333;
+    color: #000000;
     border: none;
     transition: color 0.5s;
+    position: relative;
 
-    &:hover {
-        border-bottom: 2px solid black;
-        color: black;
-    }
+   
 }
-
-
+.model-buttonn::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    bottom: -0.5px; 
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+  }
+  .model-buttonn:hover::after {
+    width: 100%;
+    /* Yozuvning yarimidan to'liq uzunlikka kengaytirish */
+  }
 .car-displayy {
     width: 100%;
     height: auto;
@@ -87,8 +99,8 @@
 
 
 
-    transition: all 0.3s ease;
-    margin-top: 20px;
+    transition: all 0.3s ;
+   
 }
 .btn22{
     display: flex;
@@ -97,6 +109,7 @@
 .btnn:hover {
     background-color: #e60000;
     color: white;
+    border: 0;
 }
 
 /* Responsiv dizayn uchun maxsus media queries */
@@ -125,6 +138,11 @@
 .car-infoo h3 {
     margin: 0 0 10px 0;
     font-size: 24px;
+    color: white;
+}
+.car-infoo
+p{
+    color: white;
 }
 
 
@@ -132,4 +150,5 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+   
 }

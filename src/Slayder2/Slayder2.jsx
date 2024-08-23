@@ -57,8 +57,10 @@ export default function CarSlider() {
                 <span>{carData[activeSlide].malumot}</span>
                 <span>{carData[activeSlide].malumot2}</span>
                 <span>{carData[activeSlide].malumot3}</span>
-                <button className='btn'>{carData[activeSlide].btn}</button>
             </div>
+        <br />
+            
+            <button className='btnnn'>{carData[activeSlide].btn}</button>
         </div>
     );
 }
