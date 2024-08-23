@@ -1,0 +1,117 @@
+.service-section {
+  
+    display: flex;
+    height: 100vh; 
+  }
+  
+  .section {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: end;
+   padding: 30px;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .left-section {
+    background-image: url('../img/page41.webp');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .right-section {
+    background-image: url('../img/page42.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+ 
+  
+
+  
+  h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .btn:hover {
+    background: rgb(255, 0, 0);
+   
+  }
+  
+
+  @media (max-width: 1024px) {
+    .service-section {
+      flex-direction: column;
+      height: 100vh;
+    }
+  
+    .section {
+      width: 100%;
+     
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .btn {
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section {
+      height: auto;
+    }
+  
+    h2 {
+      font-size: 1.75rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  
+    .btn {
+      padding: 6px 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content {
+      max-width: 250px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 0.8rem;
+    }
+  
+    .btn {
+      padding: 5px 12px;
+      font-size: 0.9rem;
+    }
+  }

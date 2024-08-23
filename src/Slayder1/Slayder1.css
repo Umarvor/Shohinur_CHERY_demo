@@ -108,13 +108,76 @@
     /* Adjust for exact centering */
 
     color: white;
-    padding: 20px;
+
     font-size: 36px;
     /* Adjust font size as needed */
     z-index: 10;
     /* Ensure the text is above the slide background */
 }
 
+.art2 {
+    position: absolute;
+    top: 35%;
+    /* Center vertically */
+    left: 20.7%;
+    /* Center horizontally */
+    transform: translate(-50%, -30%);
+    /* Adjust for exact centering */
+
+    color: white;
+
+    font-size: 36px;
+    /* Adjust font size as needed */
+    z-index: 10;
+    /* Ensure the text is above the slide background */
+}
+.art3 {
+    position: absolute;
+    top: 35%;
+    /* Center vertically */
+    left: 24.7%;
+    /* Center horizontally */
+    transform: translate(-50%, -30%);
+    /* Adjust for exact centering */
+
+    color: white;
+
+    font-size: 36px;
+    /* Adjust font size as needed */
+    z-index: 10;
+    /* Ensure the text is above the slide background */
+}
+.art4 {
+    position: absolute;
+    top: 35%;
+    /* Center vertically */
+    left: 32.7%;
+    /* Center horizontally */
+    transform: translate(-50%, -30%);
+    /* Adjust for exact centering */
+
+    color: white;
+
+    font-size: 36px;
+    /* Adjust font size as needed */
+    z-index: 10;
+    /* Ensure the text is above the slide background */
+}
+.art5 {
+    position: absolute;
+    top: 35%;
+    /* Center vertically */
+    left: 24.7%;
+    /* Center horizontally */
+    transform: translate(-50%, -30%);
+    /* Adjust for exact centering */
+    color: white;
+
+    font-size: 36px;
+    /* Adjust font size as needed */
+    z-index: 10;
+    /* Ensure the text is above the slide background */
+}
 .btn1 {
     position: absolute;
     top: 55%;
@@ -126,7 +189,49 @@
     cursor: pointer;
     background-color: rgba(0, 255, 255, 0);
     padding: 20px;
-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 10;
+    color: white;
+    border: 2px solid white;
+
+    /* Ensure the text is above the slide background */
+    &:hover {
+        background-color: red;
+    }
+}
+.btn2 {
+    position: absolute;
+    top: 56%;
+    /* Center vertically */
+    left: 25%;
+    /* Center horizontally */
+    transform: translate(-50%, -30%);
+    /* Adjust for exact centering */
+    cursor: pointer;
+    background-color: rgba(0, 255, 255, 0);
+    padding: 20px;
+    transition: all 0.3s;
+    z-index: 10;
+    color: white;
+    border: 2px solid white;
+
+    /* Ensure the text is above the slide background */
+    &:hover {
+        background-color: red;
+    }
+}
+.btn3 {
+    position: absolute;
+    top: 56%;
+    /* Center vertically */
+    left: 32.5%;
+    /* Center horizontally */
+    transform: translate(-50%, -30%);
+    /* Adjust for exact centering */
+    cursor: pointer;
+    background-color: rgba(0, 255, 255, 0);
+    padding: 20px;
+    transition: all 0.3s;
     z-index: 10;
     color: white;
     border: 2px solid white;

@@ -6,6 +6,9 @@ import Slayder2 from '../src/Slayder2/Slayder2'
 import Rasm1 from './Rang1/Rang1'
 import Slayder3 from './Slayder3/Slayder3'
 import Footer from './Footer/Footer'
+import Page4 from './Page4/Page4'
+import Vidio from './Vidio/Vidio'
+import Page5 from './Page5/Page5'
 function App() {
   return (
     <>
@@ -15,6 +18,9 @@ function App() {
         <Slayder2 />
         <Rasm1 />
         <Slayder3/>
+        <Page4/>
+        <Vidio/>
+        <Page5/>
         <Footer />
       </div>
     </>

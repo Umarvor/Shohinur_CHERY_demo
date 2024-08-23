@@ -51,7 +51,7 @@ export default function CarSlider() {
                         <p>{carData[activeSlide].malumot}</p>
 
                         <p>{carData[activeSlide].malumot3}</p>
-                        <article className='btn2'>
+                        <article className='btn22'>
                             <button className='btnn'>{carData[activeSlide].btn}</button>
                         </article>
                     </div>
