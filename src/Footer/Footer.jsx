@@ -1,6 +1,9 @@
 import React from 'react';
 import './Footer.css';
-
+import Yutub from '../img/yu.png'
+import Telegram from '../img/tel.png'
+import Facebooc from '../img/Facebok.png'
+import Instagramm from '../img/ins.png'
 function Footer() {
   return (
     <footer className="footer">
@@ -25,25 +28,20 @@ function Footer() {
         </div>
         <div className="footer-contact">
           <p>Chery ishonch telefoni:</p>
-          <p className="phone-number">+998 71 276 55 55</p>
+          <a href="tel:712765555"><p className="phone-number">+998 71 276 55 55</p></a>
           <p>Ishonch telefoni (shikoyat va takliflar):</p>
-          <p className="phone-number">+998 71 209 15 24</p>
+          <a href="tel:+998712091524"><p className="phone-number">+998 71 209 15 24</p></a>
         </div>
         <div className="footer-social">
           <p>IJTIMOIY TARMOQLARDA BIZGA QO'SHILING:</p>
           <div className="social-icons">
-            <a href="#" className="social-icon">
-            
-            </a>
-            <a href="#" className="social-icon">
-            
-            </a>
-            <a href="#" className="social-icon">
-             
-            </a>
-            <a href="#" className="social-icon">
-           
-            </a>
+            <a target='_blank' href="https://www.youtube.com/@cheryuzbekistan"> <img src={Yutub} alt="Yutub" className='social-icon' /></a>
+           <a target='_blank' href="https://t.me/cheryuzbekistan"> <img src={Telegram} alt="Yutub" className='social-icon' /></a>
+
+          <a target='_blank' href="https://www.facebook.com/CheryUzbekistan"><img src={Facebooc} alt="Yutub" className='social-icon' />
+          </a>  
+           <a target='_blank' href="https://www.instagram.com/cheryuzbekistan/"> <img src={Instagramm} alt="Yutub" className='social-icon' /></a>
+
           </div>
         </div>
       </div>

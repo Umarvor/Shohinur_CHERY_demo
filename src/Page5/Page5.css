@@ -33,7 +33,7 @@
   
   p {
     font-size: 14px;
-    color: #666;
+    color: #000000;
   }
   
   .test-drive-button, .anketa-button {
@@ -63,6 +63,9 @@
   @media (max-width: 768px) {
     .test-drive-option {
       width: 100%;
+    }
+    .test-drive-section{
+      display: block;
     }
   }
   
